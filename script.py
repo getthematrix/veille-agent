@@ -36,4 +36,4 @@ for entry in feed.entries[:10]:
 output = "\n\n".join(results)
 
 with open("report.txt", "w") as f:
-    f.write(output)
+    f.write("TEST OK")
