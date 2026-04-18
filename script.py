@@ -28,7 +28,7 @@ feed = feedparser.parse("https://export.arxiv.org/rss/eess.SP")
 
 results = []
 
-for entry in feed.entries[:10]:
+for entry in feed.entries[:5]:
     if is_relevant(entry.title + entry.summary):
         summary = summarize(entry.summary)
         results.append(f"## {entry.title}\n{summary}\n{entry.link}\n")
